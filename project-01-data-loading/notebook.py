@@ -8,12 +8,11 @@ df = pd.read_csv("data/2019.csv")
 print(df.shape)
 
 # %% First and last rows
-print(df.head(1))
-print(df.tail(1))
+print(df.head(5))
+print(df.tail(5))
 
 # %% Column names and types
-print(df.columns.tolist())
-print(df.dtypes)
+print(df.info())
 
 # %% Null counts
 print(df.isnull().sum())
